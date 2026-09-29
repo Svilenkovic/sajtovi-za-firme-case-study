@@ -2,7 +2,7 @@
 
 A Serbian and English guide to business websites, organised around what different industries actually need from a site.
 
-**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Srpski](README.sr.md)
+**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Medica Centar case study](https://sajtovizafirme.com/en/medica-centar-case-study/) · [Srpski](README.sr.md)
 
 > [!NOTE]
 > This is an independent project by D. Svilenković. The production source stays in a private repository; this public repository documents the work.
@@ -10,7 +10,7 @@ A Serbian and English guide to business websites, organised around what differen
 <table>
   <tr><td><b>Type</b></td><td>Industry-led business website</td></tr>
   <tr><td><b>Languages</b></td><td>Serbian and English</td></tr>
-  <tr><td><b>Public routes</b></td><td>34 canonical pages</td></tr>
+  <tr><td><b>Public routes</b></td><td>36 canonical pages</td></tr>
   <tr><td><b>Role</b></td><td>Research, design, development, SEO, hosting and maintenance</td></tr>
   <tr><td><b>Stack</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
 </table>

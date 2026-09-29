@@ -2,7 +2,7 @@
 
 Poslovni sajt organizovan po delatnostima.
 
-**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [English](README.md)
+**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Studija: Medica Centar](https://sajtovizafirme.com/projekat-medica-centar/) · [English](README.md)
 
 > [!NOTE]
 > Samostalni projekat D. Svilenkovića. Produkcijski izvor ostaje u privatnom repozitorijumu; ovaj javni repozitorijum dokumentuje izvedeni rad.
@@ -10,7 +10,7 @@ Poslovni sajt organizovan po delatnostima.
 <table>
   <tr><td><b>Vrsta</b></td><td>Poslovni sajt organizovan po delatnostima</td></tr>
   <tr><td><b>Jezici</b></td><td>srpski i engleski</td></tr>
-  <tr><td><b>Javne rute</b></td><td>34 canonical stranica</td></tr>
+  <tr><td><b>Javne rute</b></td><td>36 canonical stranica</td></tr>
   <tr><td><b>Uloga</b></td><td>istraživanje, dizajn, razvoj, SEO, hosting i održavanje</td></tr>
   <tr><td><b>Tehnologije</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
 </table>
