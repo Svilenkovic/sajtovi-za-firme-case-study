@@ -1,42 +1,58 @@
+<a href="https://sajtovizafirme.com/"><img src="media/cover.jpg" alt="Sajtovi za firme, naslovna strana na laptopu i telefonu" width="100%"></a>
+
 # Sajtovi za firme
 
-Poslovni sajt organizovan po delatnostima.
+Vodič kroz ono što sajt firme mora da ima, delatnost po delatnost, sa svakom zakonskom obavezom vezanom za član propisa.
 
-**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Studija: Medica Centar](https://sajtovizafirme.com/projekat-medica-centar/) · [English](README.md)
+**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Studija slučaja](https://svilenkovic.rs/radovi/sajtovi-za-firme) · [English](README.md)
 
 > [!NOTE]
-> Samostalni projekat D. Svilenkovića. Produkcijski izvor ostaje u privatnom repozitorijumu; ovaj javni repozitorijum dokumentuje izvedeni rad.
+> Moj sopstveni projekat, ne klijentski posao. Izvorni kod je privatan. Ova stranica opisuje šta sajt radi i kako je napravljen.
 
 <table>
-  <tr><td><b>Vrsta</b></td><td>Poslovni sajt organizovan po delatnostima</td></tr>
-  <tr><td><b>Jezici</b></td><td>srpski i engleski</td></tr>
-  <tr><td><b>Javne rute</b></td><td>36 canonical stranica</td></tr>
-  <tr><td><b>Uloga</b></td><td>istraživanje, dizajn, razvoj, SEO, hosting i održavanje</td></tr>
-  <tr><td><b>Tehnologije</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
+  <tr><td><b>Klijent</b></td><td>Sopstveni projekat</td></tr>
+  <tr><td><b>Delatnost</b></td><td>Vodič za sajtove firmi po delatnostima</td></tr>
+  <tr><td><b>Lokacija</b></td><td>Srbija</td></tr>
+  <tr><td><b>Vrsta</b></td><td>Sajt sa više strana</td></tr>
+  <tr><td><b>Moj deo posla</b></td><td>Istraživanje, dizajn, izrada, SEO i hosting</td></tr>
+  <tr><td><b>Tehnologije</b></td><td>Astro 7, GSAP ScrollTrigger, Lenis, PHP 8.3, SQLite, nginx</td></tr>
 </table>
 
-## Namena
+## O projektu
 
-Restoranu, ordinaciji i B2B dobavljaču nije potreban isti sajt. Projekat polazi od načina poslovanja i radnje koju posetilac treba da uradi, pa za svaku vrstu firme povezuje prave stranice, dokaze i put do kontakta.
+Kad pravim sajt za firmu, uvek se vraćaju ista pitanja: šta restoran mora da napiše o alergenima, sme li ordinacija da objavi rezultate lečenja, koji broj agencija za nekretnine stavlja u oglas. Odgovori postoje, ali su rasuti po zakonima, pravilnicima i kodeksima komora. Skupio sam ih na jedan sajt, složen kao dvanaest izdanja, od restorana i smeštaja do advokata i proizvodnih firmi.
 
-## Dizajn pravac
+Svaka obaveza ima naziv propisa, broj Službenog glasnika, član i link na tekst. Ono čega u propisu nema označeno je kao praksa, pa se odmah vidi šta mora, a šta je samo dobro rešenje. Svako izdanje počinje anatomijom sajta te delatnosti: na računaru se skica telefona sklapa blok po blok dok spisak prolazi ekranom, a na telefonu je odmah cela.
 
-Interfejs je zamišljen kao anatomija poslovnog sajta. Slojevi se razdvajaju i ponovo sastavljaju tokom skrola, na svetloj podlozi sa žadnim i koralnim akcentima.
+## Šta sam uradio
 
-## Šta je urađeno
+- Dvanaest izdanja po delatnostima, svako sa skicom sajta, propisima, čestim greškama i primerom sajta koji sam radio
+- Tabela obaveza za sve delatnosti, sa filterom i linkom na propis u svakom redu
+- Skica koja se sklapa uz skrol preko GSAP ScrollTrigger-a; Lenis ublažava skrol samo za miš i dodirnu tablu
+- Sav tekst je u HTML-u, čita se bez JavaScript-a i ceo je i uz smanjeno kretanje
+- Bez kolačića, analitike i zahteva ka tuđim serverima
 
-- Posebne smernice za uslužne firme, lokalne biznise, prodavnice i B2B kompanije
-- Arhitektura stranica objašnjena kroz vidljive slojeve sadržaja
-- Srpski na korenu i odgovarajuće engleske stranice pod /en/
-- Put do upita vezan za vrstu poslovanja posetioca
-- Kontrole animacije, reduced-motion režim i upotrebljiv sadržaj bez JavaScript-a
+## Merenja
 
-## Provere izdanja
+| | Performanse | Pristupačnost | Dobre prakse | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Telefon | 92 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
 
-Svaka canonical ruta proverena je na širinama 390, 768, 1440 i 1920 px. Izdanje je provereno i bez JavaScript-a i uz reduced-motion postavku. Žive provere obuhvatile su HTTPS, preusmerenja, zaglavlja odgovora, strukturirane podatke, sitemap fajlove, zaštićene putanje i neispravne kontakt zahteve bez slanja test poruka.
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Person`.
 
-Ovo su inženjerske provere, a ne tvrdnje o poziciji u pretrazi ili terenskim performansama.
+## Snimci ekrana
+
+<table>
+  <tr>
+    <td width="68%" valign="top"><img src="media/desktop.webp" alt="Sajtovi za firme, naslovna strana na ekranu širine 1440 px"></td>
+    <td width="32%" valign="top"><img src="media/mobile.webp" alt="Sajtovi za firme, naslovna strana na telefonu"></td>
+  </tr>
+</table>
+
+<img src="media/inner-1.webp" alt="Tabela obaveza, svaki red sa propisom i članom">
+<sub>Tabela obaveza, svaki red sa propisom i članom</sub>
 
 ---
 
-<sub>Dizajn i izrada: [D. Svilenković](https://svilenkovic.com).</sub>
+<sub>Izrada: [D. Svilenković](https://svilenkovic.rs).</sub>

@@ -1,42 +1,58 @@
+<a href="https://sajtovizafirme.com/"><img src="media/cover.jpg" alt="Sajtovi za firme, home page on a laptop and a phone" width="100%"></a>
+
 # Sajtovi za firme
 
-A Serbian and English guide to business websites, organised around what different industries actually need from a site.
+A guide to what a business website must include, industry by industry, with every legal obligation linked to the article that sets it.
 
-**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Medica Centar case study](https://sajtovizafirme.com/en/medica-centar-case-study/) · [Srpski](README.sr.md)
+**[sajtovizafirme.com](https://sajtovizafirme.com/)** · [Case study (in Serbian)](https://svilenkovic.rs/radovi/sajtovi-za-firme) · [Srpski](README.sr.md)
 
 > [!NOTE]
-> This is an independent project by D. Svilenković. The production source stays in a private repository; this public repository documents the work.
+> My own project, not client work. The source code is private. This page describes what the site does and how it is built.
 
 <table>
-  <tr><td><b>Type</b></td><td>Industry-led business website</td></tr>
-  <tr><td><b>Languages</b></td><td>Serbian and English</td></tr>
-  <tr><td><b>Public routes</b></td><td>36 canonical pages</td></tr>
-  <tr><td><b>Role</b></td><td>Research, design, development, SEO, hosting and maintenance</td></tr>
-  <tr><td><b>Stack</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
+  <tr><td><b>Client</b></td><td>Own project</td></tr>
+  <tr><td><b>Industry</b></td><td>Guide to business websites by industry</td></tr>
+  <tr><td><b>Location</b></td><td>Serbia</td></tr>
+  <tr><td><b>Type</b></td><td>Multi-page website</td></tr>
+  <tr><td><b>My role</b></td><td>Research, design, development, SEO and hosting</td></tr>
+  <tr><td><b>Stack</b></td><td>Astro 7, GSAP ScrollTrigger, Lenis, PHP 8.3, SQLite, nginx</td></tr>
 </table>
 
-## Purpose
+## About the project
 
-A restaurant, clinic and B2B supplier do not need the same website. This project starts with the business model and the action a visitor should take, then maps the right pages, proof and contact path for that kind of company.
+When I build a site for a business, the same questions come up every time: what a restaurant must say about allergens, whether a clinic may publish treatment results, which number an estate agency puts in a listing. The answers exist, but they are spread across laws, rulebooks and chamber codes. I collected them on one site, set out as twelve issues, from restaurants and accommodation to lawyers and manufacturers.
 
-## Design direction
-
-The interface is built as an anatomy lesson. Layers of a business site separate and reassemble while the reader scrolls, using a light surface with jade and coral accents.
+Every obligation names the regulation, the Official Gazette issue, the article and a link to the text. Anything the law does not require is labelled as practice, so a reader sees at once what is mandatory and what is simply a good idea. Each issue opens with the anatomy of that kind of site: on a computer a phone sketch assembles block by block while the list scrolls past, and on a phone it appears complete.
 
 ## What I built
 
-- Separate guidance for service firms, local businesses, shops and B2B companies
-- Page architecture explained through visible content layers
-- Serbian pages at the root and matching English pages under /en/
-- An inquiry path tied to the visitor’s type of business
-- Motion controls, a reduced-motion path and useful content without JavaScript
+- Twelve industry issues, each with a site sketch, the relevant rules, common mistakes and a site I built as an example
+- A table of obligations across all industries, with a filter and a link to the regulation on every row
+- A scroll-driven sketch made with GSAP ScrollTrigger; Lenis smooths scrolling only for a mouse or touchpad
+- All text in the HTML, readable without JavaScript and complete with reduced motion
+- No cookies, no analytics and no requests to other servers
 
-## Release checks
+## Results
 
-Every canonical route was checked at 390, 768, 1440 and 1920 px. The release was also tested without JavaScript and with reduced motion. Live checks covered HTTPS, redirects, response headers, structured data, sitemap files, protected paths and invalid contact requests without sending test mail.
+| | Performance | Accessibility | Best practices | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Mobile | 92 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
 
-These are engineering checks, not claims about search ranking or field performance.
+PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. axe accessibility check: no violations. Structured data: `FAQPage`, `Person`.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="68%" valign="top"><img src="media/desktop.webp" alt="Sajtovi za firme, home page on a 1440 px screen"></td>
+    <td width="32%" valign="top"><img src="media/mobile.webp" alt="Sajtovi za firme, home page on a phone"></td>
+  </tr>
+</table>
+
+<img src="media/inner-1.webp" alt="Table of obligations, each row with the regulation and article">
+<sub>Table of obligations, each row with the regulation and article</sub>
 
 ---
 
-<sub>Designed and built by [D. Svilenković](https://svilenkovic.com).</sub>
+<sub>Built by [D. Svilenković](https://svilenkovic.com).</sub>
