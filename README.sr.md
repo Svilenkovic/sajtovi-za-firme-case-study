@@ -36,10 +36,10 @@ Svaka obaveza ima naziv propisa, broj Službenog glasnika, član i link na tekst
 
 | | Performanse | Pristupačnost | Dobre prakse | SEO |
 | :-- | :-: | :-: | :-: | :-: |
-| Telefon | 92 | 100 | 100 | 100 |
+| Telefon | 95 | 100 | 100 | 100 |
 | Desktop | 100 | 100 | 100 | 100 |
 
-PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Person`.
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Organization`, `Person`.
 
 ## Snimci ekrana
 
